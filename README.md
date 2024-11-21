@@ -16,6 +16,8 @@ pak::pak("Gotfrid/riskinstall")
 ## How to use
 
 ```r
+library(riskinstall)
+
 options(repos = "https://raw.githubusercontent.com/Gotfrid/riskinstall/refs/heads/main") # nolint
 
 install_packages(
