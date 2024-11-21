@@ -1,5 +1,5 @@
 .DEFAULT_RISK_THRESHOLD <- 0
-.DEFUALT_RISK_SCORE_SEP <- "#"
+.DEFUALT_RISK_SCORE_SEP <- "---"
 
 #' @export
 install_packages <- function(
