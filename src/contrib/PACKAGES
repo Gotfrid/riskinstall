@@ -1,0 +1,9 @@
+Package: rlang
+Version: 1.1.4#0.3
+License: MIT + file LICENSE
+NeedsCompilation: no
+MD5sum: 48000f1be0d3d0f584aaf10ec2e9eead
+Filesize: 404556
+SHA256: b492b964ca2b500ef1094075715214a1baef0ef0575988a1c9a0551c8faf723c
+Depends: R (>= 3.5.0)
+Imports: utils
