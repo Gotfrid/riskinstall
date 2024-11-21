@@ -1,0 +1,10 @@
+Package: riskinstall
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R: 
+    person("Pavel", "Demin", , "pavel.demin@appsilon.com", role = c("aut", "cre"))
+Description: Install packages conforming to risk assessment.
+License: MIT
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
