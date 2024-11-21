@@ -17,7 +17,7 @@ install_packages <- function(
     unlist() |>
     as.numeric()
   args$available <- all_packages[
-    isTRUE(risk_values <= risk_values), ,
+    isTRUE(risk_values <= risk_threshold), ,
     drop = FALSE
   ]
   do.call(install.packages, args)

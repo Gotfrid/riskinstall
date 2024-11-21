@@ -1,5 +1,6 @@
-# safe-package-repo
-Package and repository for safe installation of R packages
+# riskinstall
+
+Package and repository for safe installation of R packages.
 
 ```r
 score <- pkg_ref("rlang") |>
