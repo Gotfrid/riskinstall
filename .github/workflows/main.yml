@@ -1,0 +1,27 @@
+name: Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  main:
+    name: Main job
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v4
+      
+      - name: clone admiral actions
+        run: |
+          git clone git@github.com:pharmaverse/admiralci.git admiralci
+      
+      - name: overwrite dependency installation
+        run: |
+          sed -i -e 's/run-system-dependencies: false/run-system-dependencies: true/g' admiralci/.github/workflows/lintr.yml
+
+      - name: check the new workflow
+        run: |
+          cat admiralci/.github/workflows/lintr.yml
+      
+      - name: run modified workflow
+        uses: ./admiralci/.github/workflows/lintr.yml
