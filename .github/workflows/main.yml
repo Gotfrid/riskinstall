@@ -12,9 +12,11 @@ jobs:
         uses: actions/checkout@v4
       
       - name: clone admiral actions
-        run: |
-          git clone git@github.com:pharmaverse/admiralci.git admiralci
-      
+        uses: actions/checkout@v4
+        with:
+          repository: pharmaverse/admiralci
+          path: admiralci
+
       - name: overwrite dependency installation
         run: |
           sed -i -e 's/run-system-dependencies: false/run-system-dependencies: true/g' admiralci/.github/workflows/lintr.yml
